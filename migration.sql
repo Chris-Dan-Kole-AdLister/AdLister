@@ -20,6 +20,7 @@ CREATE TABLE ads (
     id          INT UNSIGNED NOT NULL AUTO_INCREMENT,
     user_id     INT UNSIGNED NOT NULL,
     title       VARCHAR(250) NOT NULL,
+    price       DOUBLE NOT NULL,
     description TEXT(1000) NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (user_id)
