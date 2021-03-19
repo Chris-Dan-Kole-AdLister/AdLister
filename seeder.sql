@@ -2,7 +2,7 @@ USE adlister_db;
 
 INSERT INTO users (id, username, email, password)
 VALUES
-       (1, 'testuser1', 'testuser1@gmail.com', 'testpassword1'),
+       (1, 'testuser1', 'testuser1@gmail.com', '$2a$10$pbU8E.bRIdrCccIjCcIp..nQayzTDi7ffIbnamJGwFNq04dgOl6DK'),
        (2, 'testuser2', 'testuser2@gmail.com', 'testpassword2'),
        (3, 'testuser3', 'testuser3@gmail.com', 'testpassword3'),
        (4, 'testuser4', 'testuser4@gmail.com', 'testpassword4'),
@@ -37,5 +37,3 @@ VALUES
        (6, 4, 6),
        (7, 5, 4),
        (8, 6, 3);
-
-SELECT a.title, a.description, a.price FROM ads a JOIN ad_categories ac ON a.id = ac.ad_id JOIN categories c on ac.category_id = c.id WHERE c.name = ?;
