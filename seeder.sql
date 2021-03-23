@@ -1,5 +1,3 @@
-USE adlister_db;
-
 INSERT INTO users (id, username, email, password)
 VALUES
        (1, 'testuser1', 'testuser1@gmail.com', '$2a$10$pbU8E.bRIdrCccIjCcIp..nQayzTDi7ffIbnamJGwFNq04dgOl6DK'),
