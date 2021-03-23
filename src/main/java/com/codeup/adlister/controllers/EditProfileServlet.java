@@ -13,6 +13,7 @@ import java.io.IOException;
 
 @WebServlet(name = "controllers.EditProfileServlet", urlPatterns = "/edit-profile")
 public class EditProfileServlet extends HttpServlet {
+
     long userId;
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User user = (User) request.getSession().getAttribute("user");

@@ -1,5 +1,6 @@
 package com.codeup.adlister.dao;
 
+
 import java.sql.SQLException;
 
 public interface Categories {

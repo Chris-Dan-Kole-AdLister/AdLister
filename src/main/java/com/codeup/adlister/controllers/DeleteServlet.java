@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.text.DecimalFormat;
+
 @WebServlet(name = "com.codeup.adlister.controllers.DeleteServlet", urlPatterns = "/delete")
 public class DeleteServlet extends HttpServlet {
     private long adId;
@@ -35,3 +36,4 @@ public class DeleteServlet extends HttpServlet {
         response.sendRedirect("/profile");
     }
 }
+
